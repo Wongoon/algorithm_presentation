@@ -1,15 +1,15 @@
-let num = document.querySelector('.num');
-let btn = document.querySelector('.btn');
-
-btn.onclick = babylonia(num);
-function babylonia (num){
+function calculate (){
+    let num = document.getElementById('num').value;
+    console.log(num)
     let i;
     let x = 2;
     for (i = 0; i<16; i++){
         x = (x + (num / x)) / 2;
     }
-    return x;
+    document.getElementById('result').value = x;
 }
+
 function reset() {
     document.getElementById('result').value = "";
+    document.getElementById('num').value = "";
 }

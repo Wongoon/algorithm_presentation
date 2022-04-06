@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="css/babylonia.css">
     <script src="javascript/babylonia.js"></script>
 </head>
 
 <body>
     <div class="container">
         <form action="GET" class="calculator" name="calc">
-            <input type="text" id="result" readonly name="txt" value="">
+            <input type="text" id="result" readonly name="txt" value="" placeholder="제곱근 출력값">
+            <input type="text" id="num" placeholder="값을 입력하세요..">
             <span class="clear button" onclick = "reset()">Clear</span>
-            <span class="button sqrt" onclick = "calculate()">√</span>
+            <span class="button submit" onclick = "calculate()">√</span>
         </form>
     </div>
 </body>
