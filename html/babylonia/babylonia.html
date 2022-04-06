@@ -8,13 +8,13 @@
 </head>
 
 <body>
-    <div class="container">
-        <form action="GET" class="calculator" name="calc">
-            <input type="text" id="result" readonly name="txt" value="" placeholder="제곱근 출력값">
-            <input type="text" id="num" placeholder="값을 입력하세요..">
-            <span class="clear button" onclick = "reset()">Clear</span>
-            <span class="button submit" onclick = "calculate()">√</span>
-        </form>
-    </div>
+    <form action="GET" class="calculator" name="calc">
+        <input type="text" id="result" readonly name="txt" value="" placeholder="제곱근 출력값">
+        <input type="text" id="num" placeholder="값을 입력하세요..">
+        <div class="container">
+            <span class="clear button" onclick="reset()">Clear</span>
+            <span class="button submit" onclick="calculate()">√</span>
+        </div>
+    </form>
 </body>
 </html>
