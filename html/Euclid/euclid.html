@@ -1,10 +1,34 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>유클리드 알고리즘</title>
+    <link rel="stylesheet" href="css/euclid.css">
+    <script src="javascript/euclid.js"></script>
 </head>
+
 <body>
-    
+    <div class="return">
+        <a href="../../index.html">
+            <ion-icon name="arrow-back-circle-outline"></ion-icon>
+        </a>
+    </div>
+    <form action="GET" class="calculator" name="calc">
+        <input type="text" id="result" readonly name="txt" value="" placeholder="최대공약수 출력값">
+        <div class="num">
+            <input type="text" id="num1" placeholder="값을 입력하세요..">
+            <input type="text" id="num2" placeholder="값을 입력하세요..">
+        </div>
+        <div class="container">
+            <span class="clear button" onclick="reset()">Clear</span>
+            <span class="button submit" onclick="calculate()">최대 공약수</span>
+        </div>
+    </form>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </form>
 </body>
+
 </html>

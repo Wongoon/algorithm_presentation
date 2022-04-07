@@ -1,15 +1,19 @@
-function calculate (){
-    let num = document.getElementById('num').value;
-    console.log(num)
-    let i;
-    let x = 2;
-    for (i = 0; i<16; i++){
-        x = (x + (num / x)) / 2;
+function calculate() {
+    let num1 = document.getElementById('num1').value;
+    let num2 = document.getElementById('num2').value;
+    document.getElementById('result').value = gcd(num1, num2);
+}
+function gcd(num1, num2) {
+    if (num2 == 0) {
+        return num1;
     }
-    document.getElementById('result').value = x;
+    else {
+        return gcd(num2, num1 % num2);
+    }
 }
 
 function reset() {
     document.getElementById('result').value = "";
-    document.getElementById('num').value = "";
+    document.getElementById('num1').value = "";
+    document.getElementById('num2').value = "";
 }

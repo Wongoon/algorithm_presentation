@@ -1,12 +1,18 @@
 function calculate (){
     let num = document.getElementById('num').value;
-    console.log(num)
-    let i;
-    let x = 2;
-    for (i = 0; i<16; i++){
-        x = (x + (num / x)) / 2;
+    if(num == "pi"){
+        num = 3.14159265358979;
     }
-    document.getElementById('result').value = x;
+    else if(num == "e"){
+        num = 2.71828182845904;
+    }
+    let i, x, y;
+    x = num;
+    for (i = 1; i <= 16; i++){
+        y = 0.5 * (x + (num / x));
+        x = y;
+    }
+    document.getElementById('result').value = y;
 }
 
 function reset() {

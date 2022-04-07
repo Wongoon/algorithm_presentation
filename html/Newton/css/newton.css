@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+@import url(../../../reset.css);
 *{
     margin:0;
     padding:0;
@@ -13,9 +14,17 @@ body{
     background: linear-gradient(45deg, #141e30, #324577);
 
 }
+.return{
+    position: absolute;
+    top:20px;
+    left:20px;
+}
+.return ion-icon{
+    font-size:4em;
+}
 .calculator{
     width:500px;
-    height:500px;
+    height:310px;
 }
 .calculator input{
     width:100%;
@@ -23,7 +32,9 @@ body{
     outline: none;
     padding:10px;
     border:none;
-    background:linear-gradient(45deg, #1f2222, #1b1b1c);
+    background:rgba(255, 255, 255, 0.05);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter:blur(15px);
     margin-bottom:10px;
     border-radius: 5px;
     font-size:2em;
@@ -36,7 +47,9 @@ body{
     line-height:90px;
     text-align: center;
     font-size:2em;
-    background:#fff;
+    background:rgba(255, 255, 255, 0.05);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter:blur(15px);
     border-radius:20px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -48,7 +61,7 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
-    height:calc(300px - 210px);
+    height:90px;
 }
 .calculator .container .submit{
     margin-left:5px;

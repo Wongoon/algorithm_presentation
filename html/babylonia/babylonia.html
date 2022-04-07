@@ -2,12 +2,17 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>바빌로니아 법</title>
     <link rel="stylesheet" href="css/babylonia.css">
     <script src="javascript/babylonia.js"></script>
 </head>
 
 <body>
+    <div class="return">
+        <a href="../../index.html">
+            <ion-icon name="arrow-back-circle-outline"></ion-icon>
+        </a>
+    </div>
     <form action="GET" class="calculator" name="calc">
         <input type="text" id="result" readonly name="txt" value="" placeholder="제곱근 출력값">
         <input type="text" id="num" placeholder="값을 입력하세요..">
@@ -16,5 +21,8 @@
             <span class="button submit" onclick="calculate()">√</span>
         </div>
     </form>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
