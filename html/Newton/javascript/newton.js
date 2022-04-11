@@ -12,6 +12,7 @@ function calculate (){
         y = 0.5 * (x + (num / x));
         x = y;
     }
+    
     document.getElementById('result').value = y;
 }
 
