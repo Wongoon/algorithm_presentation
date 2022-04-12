@@ -8,7 +8,6 @@ function calculate (){
     }
     else if(num < 0){
         document.getElementById('result').value = "입력이 잘못되었습니다";
-        return;
     }
     let i, x, y;
     x = num;
