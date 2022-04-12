@@ -6,6 +6,10 @@ function calculate (){
     else if(num == "e"){
         num = 2.71828182845904;
     }
+    else if(num < 0){
+        document.getElementById('result').value = "입력이 잘못되었습니다";
+        return;
+    }
     let i;
     let x = 2;
     for (i = 0; i<16; i++){
